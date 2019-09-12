@@ -64,7 +64,8 @@ namespace Calc
             {
                 int sum = tal1 / tal2;
                 string text = sum.ToString();
-                label3.Text = text;
+                label3.Text = text; //klart
+
             }
         }
     }
