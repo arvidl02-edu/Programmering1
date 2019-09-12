@@ -21,7 +21,8 @@ namespace Övning3_2
         {
             int tal1 = int.Parse(textBox1.Text);
             int tal2 = int.Parse(textBox2.Text);
-            int sum = tal1 + tal2; string text = sum.ToString();
+            int sum = tal1 + tal2;
+            string text = sum.ToString();
             label3.Text = text; //OMFG
         }
     }
