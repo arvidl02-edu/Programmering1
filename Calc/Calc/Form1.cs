@@ -42,31 +42,41 @@ namespace Calc
         {
             int tal1 = int.Parse(textBox1.Text);
             int tal2 = int.Parse(textBox2.Text);
-            if (oprtr == 1)
+            switch (oprtr)
             {
-                int sum = tal1 + tal2 ;
-                string text = sum.ToString();
-                label3.Text = text;
-            }
-            else if (oprtr == 2)
-            {
-                int sum = tal1 - tal2;
-                string text = sum.ToString();
-                label3.Text = text;
-            }
-            else if (oprtr == 3)
-            {
-                int sum = tal1 * tal2;
-                string text = sum.ToString();
-                label3.Text = text;
-            }
-            else if (oprtr == 4)
-            {
-                int sum = tal1 / tal2;
-                string text = sum.ToString();
-                label3.Text = text; //klart
+                case 0:
+                    label3.Text = "Var god välj operation";
+                    break;
+
+                case 1:
+                    int sum = tal1 + tal2;
+                    string text = sum.ToString();
+                    label3.Text = text;
+                    break;
+
+                case 2:
+                    sum = tal1 - tal2;
+                    text = sum.ToString();
+                    label3.Text = text;
+                    break;
+
+                case 3:
+                    sum = tal1 * tal2;
+                    text = sum.ToString();
+                    label3.Text = text;
+                    break;
+
+                case 4:
+                    sum = tal1 / tal2;
+                    text = sum.ToString();
+                    label3.Text = text;
+                    break;
+
+                default:
+                    break;
 
             }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
