@@ -40,8 +40,8 @@ namespace Calc
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            int tal1 = int.Parse(textBox1.Text);
-            int tal2 = int.Parse(textBox2.Text);
+            double tal1 = double.Parse(textBox1.Text);
+            double tal2 = double.Parse(textBox2.Text);
             switch (oprtr)
             {
                 case 0:
@@ -49,7 +49,7 @@ namespace Calc
                     break;
 
                 case 1:
-                    int sum = tal1 + tal2;
+                    double sum = tal1 + tal2;
                     string text = sum.ToString();
                     label3.Text = text;
                     break;
@@ -78,7 +78,10 @@ namespace Calc
             }
             
         }
-
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        { label3.Text = "____"; }
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        { label3.Text = "____"; }
         private void Form1_Load(object sender, EventArgs e)
         {
             
