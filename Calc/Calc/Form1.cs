@@ -73,6 +73,7 @@ namespace Calc
                     break;
 
                 default:
+                    MessageBox.Show("Fel","Fel",MessageBoxButtons.OK , MessageBoxIcon.Warning);
                     break;
 
             }
