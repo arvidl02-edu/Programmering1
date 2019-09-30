@@ -18,6 +18,8 @@ namespace Calc
             InitializeComponent();
         }
         int oprtr = 0;
+        double tal1 = 0;
+        double tal2 = 0;
         private void Button1_Click(object sender, EventArgs e)
         {
             oprtr = 1;
@@ -40,8 +42,16 @@ namespace Calc
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            double tal1 = double.Parse(textBox1.Text);
-            double tal2 = double.Parse(textBox2.Text);
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                label3.Text = "Skriv in tal";
+            }
+            else
+            {
+                tal1 = double.Parse(textBox1.Text);
+                tal2 = double.Parse(textBox2.Text);
+            }
+
             switch (oprtr)
             {
                 case 0:
@@ -53,7 +63,7 @@ namespace Calc
                     string text = sum.ToString();
                     label3.Text = text;
                     break;
-
+                    
                 case 2:
                     sum = tal1 - tal2;
                     text = sum.ToString();
@@ -73,6 +83,7 @@ namespace Calc
                     break;
 
                 default:
+                    MessageBox.Show("Fel","Fel",MessageBoxButtons.OK , MessageBoxIcon.Warning);
                     break;
 
             }
