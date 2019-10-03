@@ -18,6 +18,8 @@ namespace Calc
             InitializeComponent();
         }
         int oprtr = 0;
+        double tal1 = 0;
+        double tal2 = 0;
         private void Button1_Click(object sender, EventArgs e)
         {
             oprtr = 1;
@@ -40,35 +42,57 @@ namespace Calc
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            int tal1 = int.Parse(textBox1.Text);
-            int tal2 = int.Parse(textBox2.Text);
-            if (oprtr == 1)
+            if (textBox1.Text == "" || textBox2.Text == "")
             {
-                int sum = tal1 + tal2 ;
-                string text = sum.ToString();
-                label3.Text = text;
+                label3.Text = "Skriv in tal";
             }
-            else if (oprtr == 2)
+            else
             {
-                int sum = tal1 - tal2;
-                string text = sum.ToString();
-                label3.Text = text;
+                tal1 = double.Parse(textBox1.Text);
+                tal2 = double.Parse(textBox2.Text);
             }
-            else if (oprtr == 3)
+
+            switch (oprtr)
             {
-                int sum = tal1 * tal2;
-                string text = sum.ToString();
-                label3.Text = text;
-            }
-            else if (oprtr == 4)
-            {
-                int sum = tal1 / tal2;
-                string text = sum.ToString();
-                label3.Text = text; //klart
+                case 0:
+                    label3.Text = "Var god välj operation";
+                    break;
+
+                case 1:
+                    double sum = tal1 + tal2;
+                    string text = sum.ToString();
+                    label3.Text = text;
+                    break;
+                    
+                case 2:
+                    sum = tal1 - tal2;
+                    text = sum.ToString();
+                    label3.Text = text;
+                    break;
+
+                case 3:
+                    sum = tal1 * tal2;
+                    text = sum.ToString();
+                    label3.Text = text;
+                    break;
+
+                case 4:
+                    sum = tal1 / tal2;
+                    text = sum.ToString();
+                    label3.Text = text;
+                    break;
+
+                default:
+                    MessageBox.Show("Fel","Fel",MessageBoxButtons.OK , MessageBoxIcon.Warning);
+                    break;
 
             }
+            
         }
-
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        { label3.Text = "____"; }
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        { label3.Text = "____"; }
         private void Form1_Load(object sender, EventArgs e)
         {
             
