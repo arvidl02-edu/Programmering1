@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Övning_9._5
+namespace Övning_9._9
 {
     public partial class Form1 : Form
     {
@@ -16,16 +16,12 @@ namespace Övning_9._5
         {
             InitializeComponent();
         }
+
         private void Button1_Click(object sender, EventArgs e)
         {
-            double startvärde = 0;
-            double slutvärde = double.Parse(textBox2.Text);
-            double steglängd = double.Parse(textBox3.Text);
-            textBox4.Text = "";
-            for (startvärde = double.Parse(textBox1.Text); startvärde < slutvärde+1; startvärde = startvärde + steglängd)
-            {
-                textBox4.AppendText(startvärde + "\r\n");
-            }
+            string[] namn = { textBox1.Text, textBox2.Text, textBox3.Text };
+            textBox1.Text = namn[1]; textBox2.Text = namn[2]; textBox3.Text = namn[0];
+
         }
     }
 }
