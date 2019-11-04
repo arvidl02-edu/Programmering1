@@ -116,10 +116,11 @@
             // 
             // textBoxMinaResultat
             // 
-            this.textBoxMinaResultat.Location = new System.Drawing.Point(219, 43);
+            this.textBoxMinaResultat.Location = new System.Drawing.Point(219, 32);
             this.textBoxMinaResultat.Multiline = true;
             this.textBoxMinaResultat.Name = "textBoxMinaResultat";
-            this.textBoxMinaResultat.Size = new System.Drawing.Size(100, 50);
+            this.textBoxMinaResultat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxMinaResultat.Size = new System.Drawing.Size(100, 72);
             this.textBoxMinaResultat.TabIndex = 6;
             // 
             // labelResultat
