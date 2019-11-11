@@ -44,6 +44,34 @@ namespace Övning9._10
             
         }
 
-        
+        private void ButtonChoose_Click(object sender, EventArgs e)
+        {
+            switch (listBoxMenu.SelectedIndex)
+            {
+                case 0:
+                    for (int i = 0; i < 6; i++)
+                    {
+                        textBox4.AppendText(rad1[i] + "\r\n\r\n");
+                    }
+                    break;
+
+                case 1:
+                    for (int i = 0; i < 6; i++)
+                    {
+                        textBox4.AppendText(rad1[i] + "\r\n\r\n");
+                    }
+                    break;
+
+                case 2:
+                    for (int i = 0; i < 6; i++)
+                    {
+                        textBox4.AppendText(rad1[i] + "\r\n\r\n");
+                    }
+                    break;
+
+                default:
+                    break;
+            }
+        }
     }
 }
