@@ -50,6 +50,7 @@
             // 
             // listBoxMenu
             // 
+            this.listBoxMenu.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.listBoxMenu.FormattingEnabled = true;
             this.listBoxMenu.Location = new System.Drawing.Point(312, 159);
             this.listBoxMenu.Name = "listBoxMenu";
@@ -58,6 +59,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(69, 24);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -67,6 +69,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(150, 24);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -94,12 +97,18 @@
             // 
             // buttonGenerate
             // 
+            this.buttonGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.buttonGenerate.Cursor = System.Windows.Forms.Cursors.Help;
+            this.buttonGenerate.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.buttonGenerate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonGenerate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGenerate.Location = new System.Drawing.Point(150, 208);
             this.buttonGenerate.Name = "buttonGenerate";
             this.buttonGenerate.Size = new System.Drawing.Size(75, 23);
             this.buttonGenerate.TabIndex = 5;
             this.buttonGenerate.Text = "Generera";
-            this.buttonGenerate.UseVisualStyleBackColor = true;
+            this.buttonGenerate.UseVisualStyleBackColor = false;
             this.buttonGenerate.Click += new System.EventHandler(this.ButtonGenerate_Click);
             // 
             // buttonChoose
@@ -215,6 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(502, 243);
             this.Controls.Add(this.labelMenu);
             this.Controls.Add(this.label10);
