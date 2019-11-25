@@ -20,6 +20,12 @@ namespace Övn._10._2
         double radieInput = 0;
         double volymInput = 0;
 
+        void indata (out double radie, out double volym) 
+        {
+            radie = double.Parse(textBox1.Text);
+            volym = double.Parse(textBox2.Text);
+        }
+
         double volymCylinder(double radie, double höjd)
         {
             double volym = radie * radie * Math.PI * höjd;
@@ -33,8 +39,7 @@ namespace Övn._10._2
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            radieInput = double.Parse(textBox1.Text);
-            volymInput = double.Parse(textBox2.Text);
+            indata(out radieInput, out volymInput);
             textBox3.Text = volymCylinder(radieInput, volymInput)+"";
         }
     }
