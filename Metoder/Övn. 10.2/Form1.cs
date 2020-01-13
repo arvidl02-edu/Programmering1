@@ -34,7 +34,7 @@ namespace Övn._10._2
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
-            MessageBox.Show("Yeeeeaaah boyyy", "HAHAHAHHAHA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Yeeeeaaah boyyy tryck på fittknappen är du imbecill ellör???", "HAHAHAHHAHA", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Button1_Click(object sender, EventArgs e)
