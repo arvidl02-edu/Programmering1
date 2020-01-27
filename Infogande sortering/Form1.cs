@@ -44,7 +44,7 @@ namespace Infogande_sortering
                 temp = pool[n];
                 i = (n - 1);
 
-                while (i >= 0 && pool[i] > temp)
+                while (i >= 0 && pool[i] > temp) // Byt håll på > före 'temp' för omvänd sortering (?)
                 {
                     pool[i + 1] = pool[i];
                     i--;
