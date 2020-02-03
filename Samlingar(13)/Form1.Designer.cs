@@ -33,6 +33,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBoxMiasKiosk = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxMiasInput = new System.Windows.Forms.TextBox();
+            this.buttonEnqueue = new System.Windows.Forms.Button();
+            this.textBoxMiasOutput = new System.Windows.Forms.TextBox();
+            this.buttonDequeue = new System.Windows.Forms.Button();
+            this.groupBoxMiasKiosk.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1
@@ -83,12 +90,71 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // groupBoxMiasKiosk
+            // 
+            this.groupBoxMiasKiosk.Controls.Add(this.buttonDequeue);
+            this.groupBoxMiasKiosk.Controls.Add(this.textBoxMiasOutput);
+            this.groupBoxMiasKiosk.Controls.Add(this.buttonEnqueue);
+            this.groupBoxMiasKiosk.Controls.Add(this.textBoxMiasInput);
+            this.groupBoxMiasKiosk.Controls.Add(this.label2);
+            this.groupBoxMiasKiosk.Location = new System.Drawing.Point(206, 12);
+            this.groupBoxMiasKiosk.Name = "groupBoxMiasKiosk";
+            this.groupBoxMiasKiosk.Size = new System.Drawing.Size(265, 178);
+            this.groupBoxMiasKiosk.TabIndex = 5;
+            this.groupBoxMiasKiosk.TabStop = false;
+            this.groupBoxMiasKiosk.Text = "Mias kiosk";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(25, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Namn:";
+            // 
+            // textBoxMiasInput
+            // 
+            this.textBoxMiasInput.Location = new System.Drawing.Point(69, 38);
+            this.textBoxMiasInput.Name = "textBoxMiasInput";
+            this.textBoxMiasInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMiasInput.TabIndex = 1;
+            // 
+            // buttonEnqueue
+            // 
+            this.buttonEnqueue.Location = new System.Drawing.Point(175, 36);
+            this.buttonEnqueue.Name = "buttonEnqueue";
+            this.buttonEnqueue.Size = new System.Drawing.Size(57, 23);
+            this.buttonEnqueue.TabIndex = 6;
+            this.buttonEnqueue.Text = "Ställ i kö";
+            this.buttonEnqueue.UseVisualStyleBackColor = true;
+            this.buttonEnqueue.Click += new System.EventHandler(this.ButtonEnqueue_Click);
+            // 
+            // textBoxMiasOutput
+            // 
+            this.textBoxMiasOutput.Location = new System.Drawing.Point(28, 64);
+            this.textBoxMiasOutput.Name = "textBoxMiasOutput";
+            this.textBoxMiasOutput.ReadOnly = true;
+            this.textBoxMiasOutput.Size = new System.Drawing.Size(204, 20);
+            this.textBoxMiasOutput.TabIndex = 6;
+            // 
+            // buttonDequeue
+            // 
+            this.buttonDequeue.Location = new System.Drawing.Point(114, 90);
+            this.buttonDequeue.Name = "buttonDequeue";
+            this.buttonDequeue.Size = new System.Drawing.Size(118, 23);
+            this.buttonDequeue.TabIndex = 6;
+            this.buttonDequeue.Text = "Expediera nästa kund";
+            this.buttonDequeue.UseVisualStyleBackColor = true;
+            this.buttonDequeue.Click += new System.EventHandler(this.ButtonDequeue_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBoxMiasKiosk);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -98,6 +164,8 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Playground";
+            this.groupBoxMiasKiosk.ResumeLayout(false);
+            this.groupBoxMiasKiosk.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,6 +178,12 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBoxMiasKiosk;
+        private System.Windows.Forms.Button buttonDequeue;
+        private System.Windows.Forms.TextBox textBoxMiasOutput;
+        private System.Windows.Forms.Button buttonEnqueue;
+        private System.Windows.Forms.TextBox textBoxMiasInput;
+        private System.Windows.Forms.Label label2;
     }
 }
 

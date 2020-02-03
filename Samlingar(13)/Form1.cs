@@ -48,6 +48,34 @@ namespace Samlingar_13_
             }
         }
 
-        
+
+
+
+        //Mias Kiosk
+        //
+        //
+        //
+
+
+
+        Queue<string> kö = new Queue<string>();
+
+        private void ButtonEnqueue_Click(object sender, EventArgs e)
+        {
+            kö.Enqueue(textBoxMiasInput.Text);
+            textBoxMiasInput.Text = "";
+        }
+
+        private void ButtonDequeue_Click(object sender, EventArgs e)
+        {
+            if (kö.Count != 0)
+            {
+                textBoxMiasOutput.Text = kö.Dequeue() + " är nästa person att expedieras";
+            }
+            else
+            {
+                textBoxMiasOutput.Text = "Kön är tom";
+            }
+        }
     }
 }
