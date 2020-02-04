@@ -28,111 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBoxInput = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxEnglishInput = new System.Windows.Forms.TextBox();
+            this.textBoxSwedishInput = new System.Windows.Forms.TextBox();
+            this.buttonAddGlosa = new System.Windows.Forms.Button();
+            this.groupBoxTest = new System.Windows.Forms.GroupBox();
+            this.buttonTestAnswer = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxTestEnglish = new System.Windows.Forms.TextBox();
+            this.textBoxTestSwedish = new System.Windows.Forms.TextBox();
+            this.groupBoxResult = new System.Windows.Forms.GroupBox();
+            this.labelResults = new System.Windows.Forms.Label();
+            this.buttonStartTest = new System.Windows.Forms.Button();
+            this.buttonNewGlossary = new System.Windows.Forms.Button();
+            this.groupBoxInput.SuspendLayout();
+            this.groupBoxTest.SuspendLayout();
+            this.groupBoxResult.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxInput
             // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Lägg till glosor";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Location = new System.Drawing.Point(12, 131);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Glostest";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Location = new System.Drawing.Point(218, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(176, 219);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Resultat";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(11, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Starta glostest";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(218, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Nya glosor";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(10, 71);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Lägg till glosa";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(87, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(87, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Svenskt ord:";
+            this.groupBoxInput.Controls.Add(this.label2);
+            this.groupBoxInput.Controls.Add(this.label1);
+            this.groupBoxInput.Controls.Add(this.textBoxEnglishInput);
+            this.groupBoxInput.Controls.Add(this.textBoxSwedishInput);
+            this.groupBoxInput.Controls.Add(this.buttonAddGlosa);
+            this.groupBoxInput.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxInput.Name = "groupBoxInput";
+            this.groupBoxInput.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxInput.TabIndex = 0;
+            this.groupBoxInput.TabStop = false;
+            this.groupBoxInput.Text = "Lägg till glosor";
             // 
             // label2
             // 
@@ -143,28 +72,63 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Engelskt ord:";
             // 
-            // textBox3
+            // label1
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Svenskt ord:";
             // 
-            // textBox4
+            // textBoxEnglishInput
             // 
-            this.textBox4.Location = new System.Drawing.Point(83, 46);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.textBoxEnglishInput.Location = new System.Drawing.Point(87, 46);
+            this.textBoxEnglishInput.Name = "textBoxEnglishInput";
+            this.textBoxEnglishInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEnglishInput.TabIndex = 2;
             // 
-            // label3
+            // textBoxSwedishInput
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Svenskt ord:";
+            this.textBoxSwedishInput.Location = new System.Drawing.Point(87, 20);
+            this.textBoxSwedishInput.Name = "textBoxSwedishInput";
+            this.textBoxSwedishInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSwedishInput.TabIndex = 1;
+            // 
+            // buttonAddGlosa
+            // 
+            this.buttonAddGlosa.Location = new System.Drawing.Point(10, 71);
+            this.buttonAddGlosa.Name = "buttonAddGlosa";
+            this.buttonAddGlosa.Size = new System.Drawing.Size(177, 23);
+            this.buttonAddGlosa.TabIndex = 0;
+            this.buttonAddGlosa.Text = "Lägg till glosa";
+            this.buttonAddGlosa.UseVisualStyleBackColor = true;
+            this.buttonAddGlosa.Click += new System.EventHandler(this.ButtonAddGlosa_Click);
+            // 
+            // groupBoxTest
+            // 
+            this.groupBoxTest.Controls.Add(this.buttonTestAnswer);
+            this.groupBoxTest.Controls.Add(this.label4);
+            this.groupBoxTest.Controls.Add(this.label3);
+            this.groupBoxTest.Controls.Add(this.textBoxTestEnglish);
+            this.groupBoxTest.Controls.Add(this.textBoxTestSwedish);
+            this.groupBoxTest.Enabled = false;
+            this.groupBoxTest.Location = new System.Drawing.Point(12, 131);
+            this.groupBoxTest.Name = "groupBoxTest";
+            this.groupBoxTest.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxTest.TabIndex = 1;
+            this.groupBoxTest.TabStop = false;
+            this.groupBoxTest.Text = "Glostest";
+            // 
+            // buttonTestAnswer
+            // 
+            this.buttonTestAnswer.Location = new System.Drawing.Point(10, 71);
+            this.buttonTestAnswer.Name = "buttonTestAnswer";
+            this.buttonTestAnswer.Size = new System.Drawing.Size(173, 23);
+            this.buttonTestAnswer.TabIndex = 4;
+            this.buttonTestAnswer.Text = "Svara";
+            this.buttonTestAnswer.UseVisualStyleBackColor = true;
+            this.buttonTestAnswer.Click += new System.EventHandler(this.ButtonTestAnswer_Click);
             // 
             // label4
             // 
@@ -175,52 +139,107 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Engelskt ord:";
             // 
-            // button4
+            // label3
             // 
-            this.button4.Location = new System.Drawing.Point(10, 71);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Svara";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Svenskt ord:";
+            // 
+            // textBoxTestEnglish
+            // 
+            this.textBoxTestEnglish.Location = new System.Drawing.Point(83, 46);
+            this.textBoxTestEnglish.Name = "textBoxTestEnglish";
+            this.textBoxTestEnglish.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTestEnglish.TabIndex = 1;
+            // 
+            // textBoxTestSwedish
+            // 
+            this.textBoxTestSwedish.Location = new System.Drawing.Point(83, 19);
+            this.textBoxTestSwedish.Name = "textBoxTestSwedish";
+            this.textBoxTestSwedish.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTestSwedish.TabIndex = 0;
+            // 
+            // groupBoxResult
+            // 
+            this.groupBoxResult.Controls.Add(this.labelResults);
+            this.groupBoxResult.Location = new System.Drawing.Point(218, 12);
+            this.groupBoxResult.Name = "groupBoxResult";
+            this.groupBoxResult.Size = new System.Drawing.Size(176, 219);
+            this.groupBoxResult.TabIndex = 2;
+            this.groupBoxResult.TabStop = false;
+            this.groupBoxResult.Text = "Resultat";
+            // 
+            // labelResults
+            // 
+            this.labelResults.AutoSize = true;
+            this.labelResults.Location = new System.Drawing.Point(6, 16);
+            this.labelResults.Name = "labelResults";
+            this.labelResults.Size = new System.Drawing.Size(0, 13);
+            this.labelResults.TabIndex = 0;
+            // 
+            // buttonStartTest
+            // 
+            this.buttonStartTest.Enabled = false;
+            this.buttonStartTest.Location = new System.Drawing.Point(11, 237);
+            this.buttonStartTest.Name = "buttonStartTest";
+            this.buttonStartTest.Size = new System.Drawing.Size(201, 23);
+            this.buttonStartTest.TabIndex = 3;
+            this.buttonStartTest.Text = "Starta glostest";
+            this.buttonStartTest.UseVisualStyleBackColor = true;
+            this.buttonStartTest.Click += new System.EventHandler(this.ButtonStartTest_Click);
+            // 
+            // buttonNewGlossary
+            // 
+            this.buttonNewGlossary.Location = new System.Drawing.Point(218, 237);
+            this.buttonNewGlossary.Name = "buttonNewGlossary";
+            this.buttonNewGlossary.Size = new System.Drawing.Size(176, 23);
+            this.buttonNewGlossary.TabIndex = 4;
+            this.buttonNewGlossary.Text = "Nya glosor";
+            this.buttonNewGlossary.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 269);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.buttonNewGlossary);
+            this.Controls.Add(this.buttonStartTest);
+            this.Controls.Add(this.groupBoxResult);
+            this.Controls.Add(this.groupBoxTest);
+            this.Controls.Add(this.groupBoxInput);
             this.Name = "Form1";
             this.Text = "Glosprogram";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBoxInput.ResumeLayout(false);
+            this.groupBoxInput.PerformLayout();
+            this.groupBoxTest.ResumeLayout(false);
+            this.groupBoxTest.PerformLayout();
+            this.groupBoxResult.ResumeLayout(false);
+            this.groupBoxResult.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBoxEnglishInput;
+        private System.Windows.Forms.TextBox textBoxSwedishInput;
+        private System.Windows.Forms.Button buttonAddGlosa;
+        private System.Windows.Forms.GroupBox groupBoxTest;
+        private System.Windows.Forms.Button buttonTestAnswer;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxTestEnglish;
+        private System.Windows.Forms.TextBox textBoxTestSwedish;
+        private System.Windows.Forms.GroupBox groupBoxResult;
+        private System.Windows.Forms.Button buttonStartTest;
+        private System.Windows.Forms.Button buttonNewGlossary;
+        private System.Windows.Forms.Label labelResults;
     }
 }
 
