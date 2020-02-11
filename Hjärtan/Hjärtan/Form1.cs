@@ -17,14 +17,22 @@ namespace Hjärtan
             InitializeComponent();
         }
 
-        
+        private void showShrek()
+        {
+            pictureBox1.Visible = true;
+            richTextBox1.Visible = false;
+            groupBox1.Visible = false;
+        }
+
+        private void dontShowShrek()
+        {
+            pictureBox1.Visible = false;
+            richTextBox1.Visible = true;
+            groupBox1.Visible = true;
+        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
-            {
-
-            }
             string firstName = textBox1.Text;
             string secondName = textBox2.Text;
             string name1;
@@ -80,6 +88,15 @@ namespace Hjärtan
                 }
             }
             richTextBox1.Text = output;
+        }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                showShrek();
+            }
+            else dontShowShrek();
         }
     }
 }
