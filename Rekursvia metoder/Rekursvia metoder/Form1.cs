@@ -81,8 +81,8 @@ namespace Rekursvia_metoder
             }
             else
             {
-                resultatLista = resultat[placering] + ingenVändning(resultatUtifrån[], placering - 1);
-            }
+                
+            } 
             return resultatLista;
         }
 
@@ -94,7 +94,7 @@ namespace Rekursvia_metoder
             textBox2.Text = fibonacci(int.Parse(textBox2.Text)).ToString();
             if(textBox3.Text != "")
             textBox3.Text = harmoni(int.Parse(textBox3.Text)).ToString();
-            textBox4.Text = ingenVändning(resultatUtifrån[], 5);
+            
             
         }
     }
