@@ -77,24 +77,43 @@ namespace Rekursvia_metoder
             string resultatLista = "";
             if (placering == resultat.Length)
             {
-                resultatLista = resultat[resultat.Length-1].ToString();
+                resultatLista += resultat[resultat.Length - 1].ToString();
             }
             else
             {
-                
+                resultatLista = resultat[placering].ToString() + " " + ingenVändning(resultat, placering + 1);
             } 
             return resultatLista;
         }
 
+
+        //private void vändning(double[] resultat, int n)
+        //{
+        //    if (n == resultat.Length)
+        //    {
+        //        lblResultat.Text += resultat[n] + " ";
+        //    }
+        //    else
+        //    {
+        //        vändning(resultat, n + 1);
+        //        lblResultat.Text += resultat[n] + " ";
+        //    }
+        //}
+
+
+
+
+
+
         private void Button1_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text != "")
-            textBox1.Text = fakultet(int.Parse(textBox1.Text)).ToString();
-            if(textBox2.Text != "")
-            textBox2.Text = fibonacci(int.Parse(textBox2.Text)).ToString();
-            if(textBox3.Text != "")
-            textBox3.Text = harmoni(int.Parse(textBox3.Text)).ToString();
-            
+            //if(textBox1.Text != "")
+            //textBox1.Text = fakultet(int.Parse(textBox1.Text)).ToString();
+            //if(textBox2.Text != "")
+            //textBox2.Text = fibonacci(int.Parse(textBox2.Text)).ToString();
+            //if(textBox3.Text != "")
+            //textBox3.Text = harmoni(int.Parse(textBox3.Text)).ToString();
+            textBox1.Text = ingenVändning(resultatUtifrån, 0);
             
         }
     }
