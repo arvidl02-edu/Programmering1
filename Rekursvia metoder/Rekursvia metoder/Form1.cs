@@ -75,7 +75,7 @@ namespace Rekursvia_metoder
         string ingenVändning(double[] resultat, int placering)
         {
             string resultatLista = "";
-            if (placering == resultat.Length)
+            if (placering == resultat.Length - 1)
             {
                 resultatLista += resultat[resultat.Length - 1].ToString();
             }
